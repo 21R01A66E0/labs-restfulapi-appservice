@@ -81,7 +81,7 @@ public class WeatherController : ControllerBase
         currentWeather.AirQuality = weather.AirQuality;
         currentWeather.SaveChanges();
 
-        return weather;
+        return currentWeather;
     }
 
 }
