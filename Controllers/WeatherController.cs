@@ -71,8 +71,8 @@ public class WeatherController : ControllerBase
             return StatusCode(StatusCodes.Status500InternalServerError, "Weather database not initialized");
         }
 
-        var currentweather = weatherContext.Weather.FirstOrDefault(x => x.ID == id);
-        if (currentweather == null)
+        var currentWeather = weatherContext.Weather.FirstOrDefault(x => x.ID == id);
+        if (currentWeather == null)
         {
             return NotFound();
         }
